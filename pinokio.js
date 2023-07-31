@@ -5,7 +5,7 @@ const exists = (filepath) => {
   return new Promise(r=>fs.access(filepath, fs.constants.F_OK, e => r(!e)))
 }
 module.exports = {
-  name: "AnimateDiff Installer",
+  title: "AnimateDiff",
   description: "Install AnimateDiff Automatic1111 Extension and the models with one click",
   icon: "icon.jpeg",
   menu: [{
