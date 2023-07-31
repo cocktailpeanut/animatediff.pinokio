@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+.container .row {
+  display: flex;
+}
+.container .row .col {
+  width: 20%;
+}
+.container .row .col video {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class='container'>
+</div>
+<script>
+const models = [{
+  url: "https://civitai.com/models/30240/toonyou"
+  vids: [
+    "https://animatediff.github.io/animations/model_01/01.mp4",
+    "https://animatediff.github.io/animations/model_01/02.mp4"
+    "https://animatediff.github.io/animations/model_01/03.mp4"
+    "https://animatediff.github.io/animations/model_01/04.mp4"
+  ]
+}, {
+  url: "https://civitai.com/models/4468/counterfeit-v30",
+  vids: [
+    "https://animatediff.github.io/animations/model_02/01.mp4",
+    "https://animatediff.github.io/animations/model_02/02.mp4",
+    "https://animatediff.github.io/animations/model_02/03.mp4",
+    "https://animatediff.github.io/animations/model_02/04.mp4",
+  ]
+}, {
+  url: "https://civitai.com/models/4201/realistic-vision-v20",
+  vids: [
+    "https://animatediff.github.io/animations/model_03/01.mp4",
+    "https://animatediff.github.io/animations/model_03/02.mp4",
+    "https://animatediff.github.io/animations/model_03/03.mp4",
+    "https://animatediff.github.io/animations/model_03/04.mp4",
+  ]
+}, {
+  url: "https://civitai.com/models/43331/majicmix-realistic",
+  vids: [
+    "https://animatediff.github.io/animations/model_04/01.mp4",
+    "https://animatediff.github.io/animations/model_04/02.mp4",
+    "https://animatediff.github.io/animations/model_04/03.mp4",
+    "https://animatediff.github.io/animations/model_04/04.mp4",
+  ]
+}, {
+  url: "https://civitai.com/models/66347/rcnz-cartoon-3d",
+  vids: [
+    "https://animatediff.github.io/animations/model_05/01.mp4",
+    "https://animatediff.github.io/animations/model_05/02.mp4",
+    "https://animatediff.github.io/animations/model_05/03.mp4",
+    "https://animatediff.github.io/animations/model_05/04.mp4",
+  ]
+}]
+const html = models.map((m) => {
+  return "<div class='row'>" +
+    m.vids.map((vid) => {
+      return `<div class='col'><video autoplay muted><source src="${vid}"/></video></div>`
+    }).join("") +
+    "<div class='col'><button class='download' data-url="${url}">Download</button></div>"
+  "</div>"
+}).join("")
+document.querySelector(".container").innerHTML = html
+</script>
+</body>
+</html>
