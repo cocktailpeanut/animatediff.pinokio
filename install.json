@@ -1,0 +1,32 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "git clone https://github.com/continue-revolution/sd-webui-animatediff",
+      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/extensions"
+    }
+  }, {
+    "method": "fs.download",
+    "params": {
+      "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors",
+      "dir": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion"
+    }
+  }, {
+    "method": "fs.download",
+    "params": {
+      "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt",
+      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/extensions/sd-webui-animatediff/model/mm_sd_v15.ckpt"
+    }
+  }, {
+    "method": "input",
+    "params": {
+      "title": "Install Complete",
+      "description": "The extension and the model has been installed. Open the webui and play!"
+    }
+  }, {
+    "method": "browser.open",
+    "params": {
+      "uri": "/?selected=sd-webui"
+    }
+  }]
+}
