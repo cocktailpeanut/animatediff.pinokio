@@ -11,5 +11,10 @@ module.exports = {
   menu: [{
     html: '<i class="fa-solid fa-plug"></i> Install',
     href: "install.json?run=true&fullscreen=true"
+  }, {
+    html: '<i class="fa-solid fa-cloud-arrow-down"></i> Download models',
+    href: "download.html?raw=true",
+    target: "_blank",
+    features: "browser"
   }]
 }

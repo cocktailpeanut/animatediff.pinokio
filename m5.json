@@ -1,0 +1,21 @@
+{
+  "url": "https://civitai.com/api/download/models/82547",
+  "run": [{
+    "method": "fs.download",
+    "params": {
+      "url": "{{self.url}}",
+      "dir": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion"
+    }
+  }, {
+    "method": "input",
+    "params": {
+      "title": "Model Download Complete",
+      "description": "Open the Web UI and refresh the models list"
+    }
+  }, {
+    "method": "browser.open",
+    "params": {
+      "uri": "/?selected=sd-webui"
+    }
+  }]
+}

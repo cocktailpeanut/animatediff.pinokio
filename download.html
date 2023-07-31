@@ -3,32 +3,69 @@
 <style>
 body {
   margin: 0;
+  font-family: Sans-serif;
+}
+nav {
+  padding: 50px 0 30px;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  margin: 0;
 }
 .container .row {
   display: flex;
+  width: 100%;
 }
 .container .row .col {
   width: 20%;
+  align-items: center;
 }
 .container .row .col video {
   width: 100%;
 }
+.last.col {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 14px;
+}
+.col .btn {
+  text-align: center;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border:none;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
 </style>
 </head>
 <body>
+<nav><h1>Download models</h1></nav>
 <div class='container'>
 </div>
 <script>
 const models = [{
-  url: "https://civitai.com/models/30240/toonyou"
+  name: "ToonYou",
+  item: "m1.json",
   vids: [
     "https://animatediff.github.io/animations/model_01/01.mp4",
-    "https://animatediff.github.io/animations/model_01/02.mp4"
-    "https://animatediff.github.io/animations/model_01/03.mp4"
+    "https://animatediff.github.io/animations/model_01/02.mp4",
+    "https://animatediff.github.io/animations/model_01/03.mp4",
     "https://animatediff.github.io/animations/model_01/04.mp4"
   ]
 }, {
-  url: "https://civitai.com/models/4468/counterfeit-v30",
+  name: "Counterfeit V3.0",
+  item: "m2.json",
   vids: [
     "https://animatediff.github.io/animations/model_02/01.mp4",
     "https://animatediff.github.io/animations/model_02/02.mp4",
@@ -36,7 +73,8 @@ const models = [{
     "https://animatediff.github.io/animations/model_02/04.mp4",
   ]
 }, {
-  url: "https://civitai.com/models/4201/realistic-vision-v20",
+  name: "Realistic Vision V2.0",
+  item: "m3.json",
   vids: [
     "https://animatediff.github.io/animations/model_03/01.mp4",
     "https://animatediff.github.io/animations/model_03/02.mp4",
@@ -44,7 +82,8 @@ const models = [{
     "https://animatediff.github.io/animations/model_03/04.mp4",
   ]
 }, {
-  url: "https://civitai.com/models/43331/majicmix-realistic",
+  name: "majicMIX Realistic",
+  item: "m4.json",
   vids: [
     "https://animatediff.github.io/animations/model_04/01.mp4",
     "https://animatediff.github.io/animations/model_04/02.mp4",
@@ -52,7 +91,8 @@ const models = [{
     "https://animatediff.github.io/animations/model_04/04.mp4",
   ]
 }, {
-  url: "https://civitai.com/models/66347/rcnz-cartoon-3d",
+  name: "RCNZ Cartoon",
+  item: "m5.json",
   vids: [
     "https://animatediff.github.io/animations/model_05/01.mp4",
     "https://animatediff.github.io/animations/model_05/02.mp4",
@@ -63,9 +103,9 @@ const models = [{
 const html = models.map((m) => {
   return "<div class='row'>" +
     m.vids.map((vid) => {
-      return `<div class='col'><video autoplay muted><source src="${vid}"/></video></div>`
+      return `<div class='col'><video autoplay muted playsinline loop><source src="${vid}"/></video></div>`
     }).join("") +
-    "<div class='col'><button class='download' data-url="${url}">Download</button></div>"
+    `<div class='last col'><div><div>${m.name}</div><a class='btn' href="${m.item}?fullscreen=true&run=true">Download</a></div></div>` +
   "</div>"
 }).join("")
 document.querySelector(".container").innerHTML = html
