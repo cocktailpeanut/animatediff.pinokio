@@ -9,7 +9,7 @@
     "method": "fs.download",
     "params": {
       "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors",
-      "dir": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion"
+      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion/v1-5-pruned-emaonly.safetensors"
     }
   }, {
     "method": "fs.download",
