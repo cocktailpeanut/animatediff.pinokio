@@ -4,7 +4,7 @@
     "method": "fs.download",
     "params": {
       "url": "{{self.url}}",
-      "path": "../automatic1111.git/app/models/Stable-diffusion/counterfeitV30_v30.safetensors"
+      "path": "https://github.com/cocktailpeanutlabs/automatic1111.git/app/models/Stable-diffusion/counterfeitV30_v30.safetensors"
     }
   },{
     "method": "input",

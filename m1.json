@@ -4,7 +4,7 @@
     "method": "fs.download",
     "params": {
       "url": "{{self.url}}",
-      "path": "../automatic1111.git/app/models/Stable-diffusion/toonyou_beta6.safetensors"
+      "path": "https://github.com/cocktailpeanutlabs/automatic1111.git/app/models/Stable-diffusion/toonyou_beta6.safetensors"
     }
   },{
     "method": "input",
