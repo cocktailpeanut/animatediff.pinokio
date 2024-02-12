@@ -3,30 +3,48 @@
     "method": "shell.run",
     "params": {
       "message": "git clone https://github.com/continue-revolution/sd-webui-animatediff",
-      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/extensions"
+      "path": "../automatic1111.git/app/extensions"
     }
-  }, {
+  },{
     "method": "fs.download",
     "params": {
-      "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors",
-      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion/v1-5-pruned-emaonly.safetensors"
+      "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors?download=true",
+      "path": "../automatic1111.git/app/models/Stable-diffusion/v1-5-pruned.safetensors"
     }
-  }, {
+  },{
     "method": "fs.download",
     "params": {
-      "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt",
-      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/extensions/sd-webui-animatediff/model/mm_sd_v15.ckpt"
+      "url": "https://huggingface.co/conrevo/AnimateDiff-A1111/resolve/main/motion_module/mm_sd15_v1.safetensors?download=true",
+      "path": "../automatic1111.git/app/extensions/sd-webui-animatediff/model/mm_sd15_v1.safetensors"
     }
-  }, {
+  },{
+    "method": "fs.download",
+    "params": {
+      "url": "https://huggingface.co/conrevo/AnimateDiff-A1111/resolve/main/motion_module/mm_sd15_v2.safetensors?download=true",
+      "path": "../automatic1111.git/app/extensions/sd-webui-animatediff/model/mm_sd15_v2.safetensors"
+    }
+  },{
+    "method": "fs.download",
+    "params": {
+      "url": "https://huggingface.co/conrevo/AnimateDiff-A1111/resolve/main/motion_module/mm_sd15_v3.safetensors?download=true",
+      "path": "../automatic1111.git/app/extensions/sd-webui-animatediff/model/mm_sd15_v3.safetensors"
+    }
+  },{
+    "method": "fs.download",
+    "params": {
+      "url": "https://huggingface.co/conrevo/AnimateDiff-A1111/resolve/main/motion_module/mm_sdxl_v10_beta.safetensors?download=true",
+      "path": "../automatic1111.git/app/extensions/sd-webui-animatediff/model/mm_sdxl_v10_beta.safetensors"
+    }
+  },{
     "method": "input",
     "params": {
       "title": "Install Complete",
       "description": "The extension and the model has been installed. Open the webui and play!"
     }
-  }, {
+  },{
     "method": "browser.open",
     "params": {
-      "uri": "/?selected=sd-webui"
+      "url": "/?selected=sd-webui"
     }
   }]
 }
