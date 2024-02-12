@@ -3,18 +3,18 @@
     "method": "fs.download",
     "params": {
       "url": "{{self.url}}",
-      "dir": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion"
+      "path": "https://github.com/cocktailpeanutlabs/automatic1111.git/app/models/Stable-diffusion"
     }
-  }, {
+  },{
     "method": "input",
     "params": {
       "title": "Model Download Complete",
       "description": "Open the Web UI and refresh the models list"
     }
-  }, {
+  },{
     "method": "browser.open",
     "params": {
-      "uri": "/?selected=sd-webui"
+      "url": "/?selected=sd-webui"
     }
   }]
 }

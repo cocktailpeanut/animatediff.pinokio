@@ -1,21 +1,21 @@
 {
-  "url": "https://civitai.com/api/download/models/126470",
+  "url": "https://huggingface.co/nolual/majic/resolve/main/majicmixRealistic_betterV2V25.safetensors?download=true",
   "run": [{
     "method": "fs.download",
     "params": {
       "url": "{{self.url}}",
-      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion/majicmixRealistic_betterV2V25.safetensors"
+      "path": "https://github.com/cocktailpeanutlabs/automatic1111.git/app/models/Stable-diffusion/majicmixRealistic_betterV2V25.safetensors"
     }
-  }, {
+  },{
     "method": "input",
     "params": {
       "title": "Model Download Complete",
       "description": "Open the Web UI and refresh the models list"
     }
-  }, {
+  },{
     "method": "browser.open",
     "params": {
-      "uri": "/?selected=sd-webui"
+      "url": "/?selected=sd-webui"
     }
   }]
 }
