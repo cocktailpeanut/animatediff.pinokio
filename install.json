@@ -8,8 +8,8 @@
   },{
     "method": "fs.download",
     "params": {
-      "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors?download=true",
-      "path": "https://github.com/cocktailpeanutlabs/automatic1111.git/app/models/Stable-diffusion/v1-5-pruned-emaonly.safetensors"
+      "url": "https://huggingface.co/Justin-Choo/epiCRealism-Natural_Sin_RC1_VAE/resolve/main/epicrealism_naturalSinRC1VAE.safetensors?download=true",
+      "path": "https://github.com/cocktailpeanut/sd-webui.pinokio.git/automatic1111/models/Stable-diffusion/epicrealism_naturalSinRC1VAE.safetensors"
     }
   },{
     "method": "fs.download",
