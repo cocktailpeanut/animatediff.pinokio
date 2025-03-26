@@ -8,6 +8,7 @@ module.exports = {
   title: "AnimateDiff",
   description: "Install AnimateDiff Automatic1111 Extension and the models with one click",
   icon: "icon.jpeg",
+  bitcoin: "1KC17qJqdpxwEu6Fu3DJhZSTumHXdjBdab",
   menu: [{
     html: '<i class="fa-solid fa-plug"></i> Install',
     href: "install.json?run=true&fullscreen=true"
